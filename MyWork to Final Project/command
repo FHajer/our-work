@@ -1,0 +1,18 @@
+# In Ec2 ubutu we need IAM role attached to creat Elastic bean stalk on AWS cloud & admin permostion.
+# we should install Terraform in our instance & AWS Cli.
+# To install AWS cli: sudo apt install awscli    &   aws --version
+# To install Terafrom the commands are:
+# sudo apt update
+# wget https://releases.hashicorp.com/terraform/0.14.8/terraform_0.14.8_linux_amd64.zip
+# sudo apt-get install zip -y
+# unzip terraform*.zip
+# sudo mv terraform /usr/local/bin    Because this is an excutable directory.
+# terraform             To check if terraform is installed 
+# terraform -version    To check the terraform version </mark>
+# create a folder for our Elastic bean stalk files by run thes two commands:
+# sudo mkdir /opt/terraform-elasticbeanstalk-demo
+# cd /opt/terraform-elasticbeanstalk-demo
+# Create files: main.tf  vars.tf  provider.tf  terraform.tfvars     
+# terraform init       To deploy the AWS Elastic beanstalk.
+# terraform plan       To provides the information regarding what all resources will be provisioned.
+# terraform apply      deploy the code and provision the AWS Elastic terraform.
